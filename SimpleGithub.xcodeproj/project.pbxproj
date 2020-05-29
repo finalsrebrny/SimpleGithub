@@ -182,6 +182,29 @@
 			path = UserRepositoriesTests;
 			sourceTree = "<group>";
 		};
+		4F8C31E32481240A000D3A3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4F8278A8247FDBBE00D5DD30 /* schema.json */,
+				4F1C37BC24804954001412CD /* lottie-github-logo.json */,
+				4FAF754C247E8CC300457CE2 /* Main.storyboard */,
+				4FAF7551247E8CC800457CE2 /* LaunchScreen.storyboard */,
+				4FAF754F247E8CC800457CE2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4F8C31E42481244C000D3A3D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4FAF7546247E8CC300457CE2 /* AppDelegate.swift */,
+				4FAF7548247E8CC300457CE2 /* SceneDelegate.swift */,
+				4FAF7576247E8CF900457CE2 /* AppCoordinator.swift */,
+				4F8278B0247FE3AF00D5DD30 /* Constants.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		4FAF753A247E8CC300457CE2 = {
 			isa = PBXGroup;
 			children = (
@@ -209,20 +232,13 @@
 		4FAF7545247E8CC300457CE2 /* SimpleGithub */ = {
 			isa = PBXGroup;
 			children = (
+				4F8C31E42481244C000D3A3D /* Application */,
+				4F8C31E32481240A000D3A3D /* Resources */,
 				4F8278AC247FDF4400D5DD30 /* API.swift */,
-				4F8278A8247FDBBE00D5DD30 /* schema.json */,
 				4FAF7586247E9EC300457CE2 /* Extensions */,
 				4FAF7585247E9D7700457CE2 /* VC */,
 				4FAF757D247E936C00457CE2 /* Networking */,
-				4FAF7546247E8CC300457CE2 /* AppDelegate.swift */,
-				4FAF7548247E8CC300457CE2 /* SceneDelegate.swift */,
-				4FAF754C247E8CC300457CE2 /* Main.storyboard */,
-				4F1C37BC24804954001412CD /* lottie-github-logo.json */,
-				4FAF754F247E8CC800457CE2 /* Assets.xcassets */,
-				4FAF7551247E8CC800457CE2 /* LaunchScreen.storyboard */,
 				4FAF7554247E8CC800457CE2 /* Info.plist */,
-				4FAF7576247E8CF900457CE2 /* AppCoordinator.swift */,
-				4F8278B0247FE3AF00D5DD30 /* Constants.swift */,
 			);
 			path = SimpleGithub;
 			sourceTree = "<group>";
@@ -521,7 +537,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --passthroughCustomScalars --localSchemaFile=\"schema.json\" API.swift\n";
+			shellScript = "SCRIPT_PATH=\"${PODS_ROOT}/Apollo/scripts\"\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --passthroughCustomScalars --localSchemaFile=\"Resources/schema.json\" API.swift\n";
 		};
 		7BAEA0C79857C00B86B16EE3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

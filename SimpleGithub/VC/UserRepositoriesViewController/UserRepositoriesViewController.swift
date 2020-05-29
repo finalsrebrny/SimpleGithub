@@ -14,12 +14,17 @@ protocol UserRepositoriesViewRendering: class {
     func hideTableViewIndicator()
     func setEmptyView()
     func removeEmptyView()
+    func showAlert(message: String)
 }
 
 class UserRepositoriesViewController: UIViewController, HavingXib {
 
     private enum Constants {
         static let indicatorAnimationDuration = 0.4
+        static let lottieAnimationName = "lottie-github-logo"
+        static let tableViewRowHeight: CGFloat = 70.0
+        static let alertTitle = "Error"
+        static let closeAlertButton = "OK"
     }
     
     @IBOutlet weak var indicatorView: UIView!
@@ -54,7 +59,7 @@ class UserRepositoriesViewController: UIViewController, HavingXib {
     }
     
     func configureLottie() {
-        let animationView = AnimationView(name: "lottie-github-logo")
+        let animationView = AnimationView(name: Constants.lottieAnimationName)
         animationView.frame = indicatorView.bounds
         animationView.contentMode = .scaleAspectFit
         indicatorView.addSubview(animationView)
@@ -64,7 +69,7 @@ class UserRepositoriesViewController: UIViewController, HavingXib {
 }
 
 extension UserRepositoriesViewController: UserRepositoriesViewRendering {
-    
+        
     func reloadTableView() {
             self.tableView.reloadData()
     }
@@ -88,8 +93,15 @@ extension UserRepositoriesViewController: UserRepositoriesViewRendering {
     func setEmptyView() {
             self.tableView.backgroundView = EmptyUserRepositoriesView()
     }
+    
     func removeEmptyView() {
             self.tableView.backgroundView = nil
+    }
+    
+    func showAlert(message: String) {
+        let alertView = UIAlertController.init(title: Constants.alertTitle, message: message, preferredStyle: .alert)
+        alertView.addAction(UIAlertAction(title: Constants.closeAlertButton, style: .cancel, handler: nil))
+        self.present(alertView, animated: true, completion: nil)
     }
 }
 
@@ -100,7 +112,7 @@ extension UserRepositoriesViewController: UITableViewDelegate, UITableViewDataSo
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 70
+        return Constants.tableViewRowHeight
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

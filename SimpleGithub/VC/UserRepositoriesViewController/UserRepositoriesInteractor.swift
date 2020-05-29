@@ -64,6 +64,7 @@ class UserRepositoriesInteractor: UserRepositoriesInteracting {
         }, failure: {
             error in
             DispatchQueue.main.async {
+                self.renderer.showAlert(message: error)
                 self.repositories = []
                 self.renderer.hideTableViewIndicator()
                 self.chooseRenderEmptyView()
