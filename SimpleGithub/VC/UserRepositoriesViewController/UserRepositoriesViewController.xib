@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserRepositoriesViewController" customModule="SimpleGithub" customModuleProvider="target">
             <connections>
+                <outlet property="indicatorView" destination="vdt-c1-nxW" id="7Ip-tV-Gei"/>
                 <outlet property="searchBar" destination="qs6-Y4-u4r" id="12Z-jS-WWX"/>
                 <outlet property="tableView" destination="o5A-76-mE0" id="WZn-AW-k6E"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -27,11 +28,21 @@
                     <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdt-c1-nxW">
+                    <rect key="frame" x="175" y="416" width="64" height="64"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="cOe-Ry-11h"/>
+                        <constraint firstAttribute="width" constant="64" id="xyC-gG-7JH"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="vdt-c1-nxW" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="0lK-F3-pv2"/>
                 <constraint firstItem="qs6-Y4-u4r" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6kl-PS-1C0"/>
                 <constraint firstItem="qs6-Y4-u4r" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6vl-oa-1iY"/>
+                <constraint firstItem="vdt-c1-nxW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="F88-lx-gpO"/>
                 <constraint firstAttribute="bottom" secondItem="o5A-76-mE0" secondAttribute="bottom" id="OHc-Qa-1mA"/>
                 <constraint firstAttribute="trailing" secondItem="o5A-76-mE0" secondAttribute="trailing" id="XL6-ae-BOk"/>
                 <constraint firstItem="o5A-76-mE0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d2N-U3-YCy"/>

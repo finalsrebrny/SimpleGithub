@@ -1,0 +1,20 @@
+query repositoryMethods($login: String!){
+    repositoryOwner(login: $login) {
+      login
+      repositories(last:100) {
+        nodes {
+          name
+          primaryLanguage {
+            name
+          }
+          stargazers {
+            totalCount
+          }
+          isFork
+        }
+      }
+    }
+    viewer {
+      login
+    }
+}

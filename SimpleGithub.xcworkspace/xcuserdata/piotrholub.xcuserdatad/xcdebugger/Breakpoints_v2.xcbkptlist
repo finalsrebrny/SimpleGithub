@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D3F1DD19-9FCC-4F83-8881-632F98667381"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A957878-12C4-4CF0-9E7B-860892058F84"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleGithub/UI/UserRepositoriesViewController/UserRepositoriesInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "getUserRepositories(userName:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1A957878-12C4-4CF0-9E7B-860892058F84 - 2844c4084340ada2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleGithub.UserRepositoriesInteractor.getUserRepositories(userName: Swift.String) -&gt; ()"
+                  moduleName = "SimpleGithub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/piotrholub/Documents/Projekty/SimpleGithub/SimpleGithub/UI/UserRepositoriesViewController/UserRepositoriesInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "1A957878-12C4-4CF0-9E7B-860892058F84 - 83dfd54b27035d3b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String) -&gt; () in SimpleGithub.UserRepositoriesInteractor.getUserRepositories(userName: Swift.String) -&gt; ()"
+                  moduleName = "SimpleGithub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/piotrholub/Documents/Projekty/SimpleGithub/SimpleGithub/UI/UserRepositoriesViewController/UserRepositoriesInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "560E8B1D-2E93-45CD-B514-37F07D22EEF0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleGithub/UI/UserRepositoriesViewController/UserRepositoriesInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getUserRepositories(userName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9989834C-5B95-40A9-80AE-009D15990239"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleGithub/UI/UserRepositoriesViewController/UserRepositoriesInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getUserRepositories(userName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D0E87C0-3BC8-4537-817B-4D4B1B4276EE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleGithub/Networking/UserRepositoriesService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "getUserRepositories(userName:success:failure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1D0E87C0-3BC8-4537-817B-4D4B1B4276EE - 98b19489d7d7a1a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SimpleGithub.RepositoryMethodsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in SimpleGithub.UserRepositoriesService.getUserRepositories(userName: Swift.String, success: (Swift.String) -&gt; (), failure: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "SimpleGithub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/piotrholub/Documents/Projekty/SimpleGithub/SimpleGithub/Networking/UserRepositoriesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "1D0E87C0-3BC8-4537-817B-4D4B1B4276EE - 98b19489d7d7a1a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SimpleGithub.RepositoryMethodsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in SimpleGithub.UserRepositoriesService.getUserRepositories(userName: Swift.String, success: (Swift.String) -&gt; (), failure: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "SimpleGithub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/piotrholub/Documents/Projekty/SimpleGithub/SimpleGithub/Networking/UserRepositoriesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "1D0E87C0-3BC8-4537-817B-4D4B1B4276EE - 98b19489d7d7a1a9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Apollo.GraphQLResult&lt;SimpleGithub.RepositoryMethodsQuery.Data&gt;, Swift.Error&gt;) -&gt; () in SimpleGithub.UserRepositoriesService.getUserRepositories(userName: Swift.String, success: (Swift.String) -&gt; (), failure: (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "SimpleGithub"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/piotrholub/Documents/Projekty/SimpleGithub/SimpleGithub/Networking/UserRepositoriesService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "1240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA3936B1-FCEA-4157-8BD3-6736A1355033"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleGithub/UI/UserRepositoriesViewController/UserRepositoriesInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getUserRepositories(userName:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

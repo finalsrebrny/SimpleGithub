@@ -5,28 +5,45 @@
 //  Created by Piotr Holub on 29/05/2020.
 //
 
+@testable import SimpleGithub
 import XCTest
 
 class UserRepositoriesTests: XCTestCase {
+    
+    var interactor: UserRepositoriesInteractor!
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var repositories: [RepositoryMethodsQuery.Data.RepositoryOwner.Repository.Node?] = []
+    
+    override func setUp() {
+        super.setUp()
+        interactor = UserRepositoriesInteractor()
+        let language = RepositoryMethodsQuery.Data.RepositoryOwner.Repository.Node.PrimaryLanguage(name: "Swift")
+        let stargazer = RepositoryMethodsQuery.Data.RepositoryOwner.Repository.Node.Stargazer(totalCount: 1000)
+        let repository = RepositoryMethodsQuery.Data.RepositoryOwner.Repository.Node(name: "SimpleGithub", primaryLanguage: language, stargazers: stargazer, isFork: false)
+        interactor.repositories = [repository]
+        repositories = [repository]
+    }
+    
+    override func tearDown() {
+        super.tearDown()
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testGenerateShouldReturnRepoTitle()
+    {
+        let renderable = interactor.item(at: IndexPath(row: 0, section: 0))
+        XCTAssertEqual(renderable.repoTitle, "SimpleGithub")
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testGenerateShouldReturnStargazerCount()
+    {
+        let renderable = interactor.item(at: IndexPath(row: 0, section: 0))
+        XCTAssertEqual(renderable.stargazersCount, 1000)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testGenerateShouldReturnLogo()
+    {
+        let renderable = interactor.item(at: IndexPath(row: 0, section: 0))
+        XCTAssertEqual(renderable.techLogoImage, Logo.swift)
     }
 
 }

@@ -6,3 +6,6 @@
 //
 
 import Foundation
+
+let API_URL = "https://api.github.com/graphql"
+let GITHUB_TOKEN = "YOUR_TOKEN"

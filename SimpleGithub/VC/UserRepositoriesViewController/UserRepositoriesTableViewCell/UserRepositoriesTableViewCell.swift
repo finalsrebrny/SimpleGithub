@@ -8,7 +8,7 @@
 import UIKit
 
 struct UserRepositoriesTableViewCellRenderable {
-    let techLogoImageUrl: String
+    let techLogoImage: Logo
     let repoTitle: String
     let stargazersCount: Int
 }
@@ -32,7 +32,7 @@ class UserRepositoriesTableViewCell: UITableViewCell {
     }
     
     func render(with renderable: UserRepositoriesTableViewCellRenderable) {
-        //techLogoImageView.image = TO DO!
+        techLogoImageView.image = renderable.techLogoImage.image
         repoNameLabel.text = renderable.repoTitle
         stargazersLabel.text = Constants.stargazersTextPrefix + String(renderable.stargazersCount)
     }
