@@ -20,5 +20,5 @@ Clean Swift Architecture (VIP)
 
 ## To Do
 
-- [ ] Install RxSwift
+- [ ] Networking via RxSwift
 - [ ] Snapshot Tests 
