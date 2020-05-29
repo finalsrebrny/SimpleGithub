@@ -4,7 +4,7 @@ Clean Swift Architecture (VIP)
 ## How to run it? 
 
 - Pods are added in repo for faster testing! (I know this is bad way in typical project)
-- Find file Constants.swift and fill **GITHUB_TOKEN**
+- Find file Application/Constants.swift and fill **GITHUB_TOKEN**
 - **RUN IT!**
 
 ## Screenshot
