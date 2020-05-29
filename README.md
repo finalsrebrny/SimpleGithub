@@ -16,5 +16,9 @@ Clean Swift Architecture (VIP)
 - [x] Search & List view 
 - [x] No results view 
 - [x] GraphQL Interaction & Error Handling
-- [x] Tests 
+- [x] Unit Tests 
 
+## To Do
+
+- [ ] Install RxSwift
+- [ ] Snapshot Tests 
