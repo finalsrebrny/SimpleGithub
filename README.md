@@ -1,7 +1,7 @@
 # SimpleGithub <img src="https://konpa.github.io/devicon/devicon.git/icons/swift/swift-original.svg" width="32">
 Clean Swift Architecture (VIP)
 
-<img src="https://github.com/finalsrebrny/SimpleGithub/blob/master/screenshot.png?raw=true" width="150">
+<img src="https://github.com/finalsrebrny/SimpleGithub/blob/master/screenshot.png?raw=true" width="250">
 
 ## HOW TO RUN IT? 
 
