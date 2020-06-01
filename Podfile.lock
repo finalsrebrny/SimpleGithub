@@ -3,20 +3,24 @@ PODS:
     - Apollo/Core (= 0.27.1)
   - Apollo/Core (0.27.1)
   - lottie-ios (3.1.8)
+  - SnapshotTesting (1.7.2)
 
 DEPENDENCIES:
   - Apollo
   - lottie-ios
+  - SnapshotTesting
 
 SPEC REPOS:
   trunk:
     - Apollo
     - lottie-ios
+    - SnapshotTesting
 
 SPEC CHECKSUMS:
   Apollo: e5c057c155bf28bcfbf928e0d69e3ce643f1a1c6
   lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  SnapshotTesting: 8caa6661fea7c8019d5b46de77c16bab99c36c5c
 
-PODFILE CHECKSUM: 52a8603892cd77e11fa2cd651ddbddbabd861f30
+PODFILE CHECKSUM: dffb172daac32699217f03a1468310dc96431385
 
 COCOAPODS: 1.9.1

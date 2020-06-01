@@ -12,6 +12,7 @@ target 'SimpleGithub' do
   target 'SimpleGithubTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'SnapshotTesting'
   end
 
   target 'SimpleGithubUITests' do

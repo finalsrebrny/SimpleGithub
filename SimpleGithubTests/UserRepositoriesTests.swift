@@ -1,8 +1,8 @@
 //
 //  UserRepositoriesTests.swift
-//  UserRepositoriesTests
+//  SimpleGithubTests
 //
-//  Created by Piotr Holub on 29/05/2020.
+//  Created by Piotr Holub on 01/06/2020.
 //
 
 @testable import SimpleGithub
@@ -47,3 +47,4 @@ class UserRepositoriesTests: XCTestCase {
     }
 
 }
+
