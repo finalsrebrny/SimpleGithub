@@ -3,8 +3,8 @@ Clean Swift Architecture (VIP)
 
 ## How to run it? 
 
-- Pods are added in repo for faster testing! (I know this is bad way in typical project)
-- Find file Application/Constants.swift and fill **GITHUB_TOKEN**
+- Pods added in repo for faster testing! (I know this it is bad way in typical project)
+- Please find file Application/Constants.swift and fill **GITHUB_TOKEN**
 - **RUN IT!**
 
 ## Screenshot
@@ -17,8 +17,9 @@ Clean Swift Architecture (VIP)
 - [x] No results view 
 - [x] GraphQL Interaction & Error Handling
 - [x] Unit Tests 
+- [x] Snapshot Tests 
 
 ## To Do
 
 - [ ] Networking via RxSwift
-- [ ] Snapshot Tests 
+
