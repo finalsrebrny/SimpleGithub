@@ -19,8 +19,13 @@ protocol UserRepositoriesInteracting {
 class UserRepositoriesInteractor: UserRepositoriesInteracting {
     
     private weak var renderer: UserRepositoriesViewRendering!
+    private var userRepositoriesService: UserRepositoriesService
     
     var repositories: [RepositoryMethodsQuery.Data.RepositoryOwner.Repository.Node?] = []
+    
+    init(userRepositoriesService: UserRepositoriesService = UserRepositoriesService.shared) {
+        self.userRepositoriesService = userRepositoriesService
+    }
     
     func viewDidLoad() {
     }
@@ -53,7 +58,7 @@ class UserRepositoriesInteractor: UserRepositoriesInteracting {
     
     private func getUserRepositories(userName: String) {
         renderer.showTableViewIndicator()
-        UserRepositoriesService.shared.getUserRepositories(userName: userName, success: {
+        self.userRepositoriesService.getUserRepositories(userName: userName, success: {
             repositories in
             DispatchQueue.main.async {
                 self.repositories = self.filterForkedRepos(repositories: repositories)
